@@ -337,7 +337,7 @@ section .main_text .main_text_bold {
   font-size: 30px;
   font-weight: bold;
   color: var(--accent);
-  margin-top: 20px;
+  margin: 20px 0 10px;
 }
 /* 2page- publishing --end */
 
