@@ -128,8 +128,10 @@ a {
   display: block;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 button {
   background: inherit;
+  cursor: pointer;
 }

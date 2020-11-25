@@ -12,11 +12,11 @@
 <body>
   <header>
     <div class="wrapper">
-      <a href="#" class="logo">류윤진 포트폴리오</a>
+      <a href="./index.html" class="logo">류윤진 포트폴리오</a>
       <ul class="menu">
-        <li><a href="#">소개</a></li>
-        <li><a href="#">퍼블리싱</a></li>
-        <li><a href="#">디자인</a></li>
+       <li><a href="./profile.html">소개</a></li>
+       <li><a href="./publishing.html">퍼블리싱</a></li>
+       <li><a href="./design.html">디자인</a></li>
       </ul>      
     </div>
   </header>
@@ -29,10 +29,10 @@
       <div class="container">
         <ul>
           <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="퍼블리싱"></a>
+            <div class="publishing_img">
+            <img src="./images/smaple/sample.jpg" alt="퍼블리싱">
             </div>
-            <span>click!</span>
+            <span class="click_hover"><a href="#">click!</a></span>
             <h4>
               Daum-NEWS TAP <br>
               clone coding
@@ -41,10 +41,10 @@
           </li>
 
           <li>
-            <div class="photo">
+            <div class="publishing_img">
               <a href="#"><img src="./images/smaple/sample.jpg" alt="퍼블리싱"></a>
             </div>
-            <span>click!</span>
+            <span class="click_hover"><a href="#">click!</a></span>
             <h4>
               Daum-NEWS TAP <br>
               clone coding
@@ -53,10 +53,10 @@
           </li>
 
           <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="퍼블리싱"></a>
+            <div class="publishing_img">
+              <img src="./images/smaple/sample.jpg" alt="퍼블리싱">
             </div>
-            <span>click!</span>
+            <span class="click_hover"><a href="#">click!</a></span>
             <h4>
               Daum-NEWS TAP <br>
               clone coding
@@ -65,10 +65,10 @@
           </li>
 
           <li>
-            <div class="photo">
+            <div class="publishing_img">
               <a href="#"><img src="./images/smaple/sample.jpg" alt="퍼블리싱"></a>
             </div>
-            <span>click!</span>
+            <span class="click_hover"><a href="#">click!</a></span>
             <h4>
               Daum-NEWS TAP <br>
               clone coding
@@ -113,6 +113,29 @@
     </ul>
    </div>
    </footer>
+
+
+   <script>
+
+    var openBtn = $('.click_hover')
+    var closeBtn = $('.modal button')
+    var dimm = $('.dimm')
+    var modal = $('.modal')
+
+
+
+
+    $(openBtn).click(function(){
+      dimm.show()
+      modal.show()
+    })    
+
+    $(closeBtn).click(function(){
+      dimm.hide()
+      modal.hide()
+    })    
+
+   </script>
 
 </body>
 </html>
