@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ryu yunjin</title>
+  <title>류윤진</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/common.js"></script>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -31,13 +31,34 @@
       <h2 class="title">디자인</h2>
       <p class="sub_title"> <span class="text_color">포토샵,일러스트</span>를 사용하여 배너와 앨범커버, 실무 디자인 등을 했습니다.</p>
       <div class="container">
-        <ul class="banner">
-          <li class="banner_item banner_item01"></li>
-          <li class="banner_item banner_item02"></li>
-        </ul>
+        <div class="swiper-container swiper-container-h">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/banner/banner01.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./images/banner/banner02.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./images/banner/banner03.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./images/banner/banner04.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./images/banner/banner05.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./images/banner/banner06.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./images/banner/banner07.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./images/banner/banner08.jpg" alt="img"></div>
+            <div class="swiper-slide">
+              <div class="swiper-container swiper-container-v">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="img_v" src="./images/banner/banner09.jpg" alt="img"></div>
+                  <div class="swiper-slide"><img class="img_v" src="./images/banner/banner10.jpg" alt="img"></div>
+                  <div class="swiper-slide"><img class="img_v" src="./images/banner/banner11.jpg" alt="img"></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-v"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-h"></div>
+        </div>
 
-          <ul>
-            <li>
+
+          <ul class="design_list">
+            <li class="design_card">
               <div class="photo">
                 <img src="./images/smaple/mainbg.jpg" alt="img">
               </div>
@@ -47,7 +68,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="design_card">
               <div class="photo" id="business_card">
                 <img src="./images/1544.jpg" alt="img">
               </div>
@@ -67,7 +88,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="design_card">
               <div class="photo">
                 <img src="./images/819-[Converted].jpg" alt="img">
               </div>
@@ -87,7 +108,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="design_card">
               <div class="photo">
                 <img src="./images/smaple/mainbg.jpg" alt="img">
               </div>
@@ -208,14 +229,27 @@
   
 
    <script>
-    $('.banner').slick({
-      autoplay:true,
-      autoplaySpeed:5000,
-      prevArrow: 'none',
-      nextArrow: 'none'
+    var swiperH = new Swiper('.swiper-container-h', {
+      slidesPerView: 2,
+      spaceBetween: 5,
+      conteredSlides:true,
+      pagination: {
+        el: '.swiper-pagination-h',
+        clickable: true,
+      },
     });
-
-
+    var swiperV = new Swiper('.swiper-container-v', {
+      direction: 'vertical',
+      spaceBetween: 300,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination-v',
+        clickable: true,
+      },
+    });
     </script>
 </body>
 </html>

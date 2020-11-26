@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ryu yunjin</title>
+  <title>류윤진</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="jquery.easypiechart.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <script src="./js/common.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <header>
@@ -70,7 +74,7 @@
             <img src="./images/smaple/mainbg.jpg" alt="증명사진">
             <div class="photo_text">
               <p>디자이너 & 퍼블리셔<br>
-              <span class="text_color">류윤진<span></span></p>
+              <span class="text_color">류윤진</span></p>
             </div>      
           </div>
         </div>
@@ -80,37 +84,37 @@
     <div class="profile_sec02">
       <h2 class="title">퍼블리싱 스킬</h2>
       <div class="container">
-        <ul class="graph">
-          <li>
-            <span class="round">90%</span>
+        <div class="graph">
+          <div class="box">
+            <div class="chart" data-percent="73">90%</div>
             포토,일러
-          </li>
+          </div>
 
-          <li>
-            <span class="round">90%</span>
+          <div class="box">
+            <div class="chart" data-percent="73">90%</div>
             HTML
-          </li>
+          </div>
 
-          <li>
-            <span class="round">90%</span>
+          <div class="box">
+            <div class="chart" data-percent="73">90%</div>
             CSS
-          </li>
+          </div>
 
-          <li>
-            <span class="round">90%</span>
+          <div class="box">
+            <div class="chart" data-percent="73">90%</div>
             JAVASCRIPT
-          </li>
+          </div>
 
-          <li>
-            <span class="round">90%</span>
+          <div class="box">
+            <div class="chart" data-percent="73">90%</div>
             JQUERY
-          </li>
+          </div>
 
-          <li>
-            <span class="round">90%</span>
+          <div class="box">
+            <div class="chart" data-percent="73">90%</div>
             VUE
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -137,5 +141,14 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="/path/to/jquery.easy-pie-chart.js"></script>
+  <script>
+    $(function() {
+        $('.chart').easyPieChart({
+            //your options goes here
+        });
+    });
+</script>
 </body>
 </html>
