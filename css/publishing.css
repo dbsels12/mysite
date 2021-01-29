@@ -1,0 +1,57 @@
+/* 2page- publishing --start */
+.publishing .title::after {
+  content: "";
+  width: 20%;
+  display: block;
+  border-bottom: 5px solid var(--accent);
+  margin: 15px auto 0;
+}
+
+.publishing p .text_color,
+.design_sec01 p .text_color {
+  font-size: 22px;
+}
+
+.publishing ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.publishing ul li {
+  position: relative;
+  width: 285px;
+  text-align: center;
+}
+
+.publishing ul li .publishing_img {
+  width: 285px;
+  height: 540px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.publishing ul li .click_hover {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 285px;
+  height: 540px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 540px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.publishing ul li .click_hover:hover {
+  opacity: 1;
+}
+
+.publishing ul h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--accent);
+  margin: 20px 0 10px;
+}
+/* 2page- publishing --end */

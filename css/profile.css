@@ -1,0 +1,129 @@
+/* 1page- profile --start */
+.profile_sec01 {
+  height: 1000px;
+}
+
+.profile_sec01 .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile_sec01 .title::after {
+  content: "";
+  width: 10%;
+  display: block;
+  border-bottom: 5px solid var(--accent);
+  margin: 15px auto 100px;
+}
+
+.profile_sec01 .left {
+  width: 600px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile_sec01 .left > li {
+  margin-bottom: 40px;
+}
+
+.profile_sec01 .left .left_text {
+  margin-bottom: 14px;
+}
+
+.profile_sec01 .left h3 {
+  font-size: 48px;
+  color: var(--accent);
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.profile_sec01 .left p {
+  font-size: 22px;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  width: 490px;
+}
+
+.profile_sec01 .left .year {
+  font-size: 36px;
+  color: var(--sub-title);
+  font-weight: bold;
+}
+
+.profile_sec01 .left .bold {
+  font-weight: bold;
+}
+
+.profile_sec01 .right {
+  width: 600px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.profile_sec01 .right::after {
+  clear: both;
+}
+
+.profile_sec01 .right .photo img {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.profile_sec01 .right .photo_text {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* 1page- profile --end */
+
+/* 1page- publishing skill --start */
+.profile_sec02 {
+  padding: 100px 0;
+}
+
+.profile_sec02 .title::after {
+  content: "";
+  width: 30%;
+  display: block;
+  border-bottom: 5px solid var(--accent);
+  margin: 15px auto 0;
+}
+
+.profile_sec02 .graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profile_sec02 li {
+  padding: 0 100px 100px 0;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.profile_sec02 .chart {
+  width: 280px;
+  height: 280px;
+  display: block;
+  color: var(--accent);
+  text-align: center;
+  line-height: 220px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile_sec02 li:nth-child(3),
+.profile_sec02 li:nth-child(6) {
+  padding-right: 0;
+}
+/* 1page- publishing skill --end */

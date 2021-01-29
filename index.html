@@ -12,18 +12,18 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+  <header>
+    <div class="wrapper">
+      <a href="./index.html" class="logo">류윤진 포트폴리오</a>
+      <ul class="menu">
+       <li><a href="./profile.html">소개</a></li>
+       <li><a href="./publishing.html">퍼블리싱</a></li>
+       <li><a href="./design.html">디자인</a></li>
+      </ul>      
+    </div>
+  </header>
   <div class="home">
-    <header>
-      <div class="wrapper">
-        <a href="./index.html" class="logo">류윤진 포트폴리오</a>
-        <ul class="menu">
-         <li><a href="./profile.html">소개</a></li>
-         <li><a href="./publishing.html">퍼블리싱</a></li>
-         <li><a href="./design.html">디자인</a></li>
-        </ul>      
-      </div>
-    </header>
-
+    <span class="bgimg"></span>
     <section>
       <div class="wrapper main_text">
         <h2>안녕하세요 <br>
@@ -45,16 +45,17 @@
         <li><a href="#"><i class="xi-instagram xi-fw"></i></a></li>
       </ul>
     </footer>
+    <div class="bg"></div>
 
 
+  </div>
     <script>
       var popUp = $('.phon_popup')
       var call = $('.call')
 
       $(call).click(function(){
-          $(popUp).show()
+          $(popUp).slideToggle()
       })
     </script>
-  </div>
 </body>
 </html>

@@ -1,0 +1,117 @@
+/* 3page- design --start */
+.design_sec01 .title::after {
+  content: "";
+  width: 16%;
+  display: block;
+  border-bottom: 5px solid var(--accent);
+  margin: 15px auto 0;
+}
+.design_sec01 .swiper-container {
+  margin-bottom: 100px;
+}
+
+.swiper-container {
+  /* width: 1200px; */
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.design_sec01 .swiper-container img {
+  display: block;
+  width: 550px;
+  height: 550px;
+}
+
+.design_sec01 .swiper-container .img_v {
+  width: 550px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.design_sec01 .container .full {
+  display: block;
+  width: 1200px;
+  height: 600px;
+}
+
+.design_sec01 .container .design_list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.design_sec01 .container .design_card {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.design_sec01 .container ul .photo {
+  width: 700px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.design_sec01 .container ul .list_text {
+  width: 500px;
+  height: 600px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.design_sec01 .container ul h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.design_sec01 .list_extra {
+  width: 380px;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 35px;
+}
+
+.design_sec02 .title::after {
+  content: "";
+  width: 82%;
+  display: block;
+  border-bottom: 5px solid var(--accent);
+  margin: 15px auto 0;
+}
+
+.design_sec02 .container ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.design_sec02 .container ul li {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.design_sec02 .container ul .photo {
+  width: 550px;
+  height: 500px;
+  overflow: hidden;
+}
+.design_sec02 .container ul .photo img:hover {
+  filter: blur(10px);
+}
+
+.design_sec02 .container ul li p {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.4;
+  color: var(--text);
+}
