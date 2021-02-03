@@ -109,6 +109,11 @@ header.active {
   padding-left: 100px;
 }
 
+.mainmenu {
+  margin: -100px;
+  animation: menu 1s 2s forwards;
+}
+
 /* home --start*/
 .home {
   height: 100vh;
@@ -116,21 +121,6 @@ header.active {
   position: relative;
   background: url(../images/yunjin/IMG_0338.jpg) no-repeat center / cover;
   animation: bgscale 1s forwards;
-}
-
-@keyframes bgscale {
-  0% {
-    transform: scale(3);
-    filter: blur(6px);
-  }
-
-  70% {
-    filter: blur(6px);
-  }
-  100% {
-    transform: scale(1);
-    filter: blur(0);
-  }
 }
 
 section .main_text {
@@ -148,15 +138,6 @@ section .main_text {
   animation: opacity 1s 1.2s forwards;
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 section .main_text .main_text_color {
   font-size: 90px;
   color: var(--accent);
@@ -165,20 +146,6 @@ section .main_text .main_text_color {
   margin-right: 200px;
   opacity: 0;
   animation: slide 1.2s 0.8s forwards;
-}
-
-@keyframes slide {
-  0% {
-    opacity: 0;
-    margin-right: 200px;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    margin-right: 0;
-  }
 }
 
 section .main_text .main_text_bold {
@@ -316,4 +283,53 @@ section .main_text .main_text_bold {
 
 .slick-dots li {
   margin: 0;
+}
+
+/* keyframe */
+
+@keyframes menu {
+  0% {
+    margin: -100px;
+  }
+  100% {
+    margin: 0px;
+  }
+}
+
+@keyframes bgscale {
+  0% {
+    transform: scale(3);
+    filter: blur(6px);
+  }
+
+  70% {
+    filter: blur(6px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    margin-right: 200px;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
 }

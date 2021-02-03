@@ -8,11 +8,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-  <script src="jquery.easypiechart.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <script src="./js/common.js"></script>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/profile.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
   <header>
@@ -86,39 +86,40 @@
       <h2 class="title">퍼블리싱 스킬</h2>
       <div class="container">
         <div class="graph">
-          <div class="box">
-            <div class="chart" data-percent="73">90%</div>
+          <div class="box1">
+            <canvas id="myChart" width="280vh" height="280vh"></canvas>
             포토,일러
           </div>
 
-          <div class="box">
-            <div class="chart" data-percent="73">90%</div>
+          <div class="box2">
+            <canvas id="myChart" width="280vh" height="280vh"></canvas>
+            피그마
+          </div>
+
+          <div class="box3">
+            <canvas id="myChart" width="280vh" height="280vh"></canvas>
             HTML
           </div>
 
-          <div class="box">
-            <div class="chart" data-percent="73">90%</div>
+          <div class="box4">
+            <canvas id="myChart" width="280vh" height="280vh"></canvas>
             CSS
           </div>
 
-          <div class="box">
-            <div class="chart" data-percent="73">90%</div>
+          <div class="box5">
+            <canvas id="myChart" width="280vh" height="280vh"></canvas>
             JAVASCRIPT
           </div>
 
-          <div class="box">
-            <div class="chart" data-percent="73">90%</div>
+          <div class="box6">
+            <canvas id="myChart" width="280vh" height="280vh"></canvas>
             JQUERY
-          </div>
-
-          <div class="box">
-            <div class="chart" data-percent="73">90%</div>
-            VUE
           </div>
         </div>
       </div>
     </div>
   </div>
+  
 
 
 
@@ -128,7 +129,7 @@
       <ul>
         <li>
          <i class="xi-call xi-fw"></i>
-         <a href="#">010-0000-0000</a>
+         <a href="#">010-8538-9552</a>
         </li>
         <li>
          <i class="xi-instagram xi-fw"></i>
@@ -142,14 +143,23 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="/path/to/jquery.easy-pie-chart.js"></script>
   <script>
-    $(function() {
-        $('.chart').easyPieChart({
-            //your options goes here
-        });
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myDoughnutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: [],
+          datasets: [{
+              // label: 'My First dataset',
+              data: [90],
+              
+          }]
+        },
+        options: {       
+        }
     });
-</script>
+
+  
+  </script>
 </body>
 </html>
