@@ -42,10 +42,15 @@
   line-height: 540px;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  color: #ffffff;
 }
 
 .publishing ul li .click_hover:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .publishing ul h4 {

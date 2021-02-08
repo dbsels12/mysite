@@ -248,6 +248,7 @@ section .main_text .main_text_bold {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
   display: none;
 }
 
@@ -261,9 +262,10 @@ section .main_text .main_text_bold {
   padding: 2rem 3rem;
   background: #ffffff;
   display: none;
+  z-index: 101;
 }
 
-.modal .btn {
+.modal button {
   position: absolute;
   top: -5%;
   right: 0;
@@ -271,9 +273,10 @@ section .main_text .main_text_bold {
   padding: 5px 10px;
   box-sizing: border-box;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 500;
   background: none;
   color: #ffffff;
+  outline: none;
 }
 
 /* slick */
