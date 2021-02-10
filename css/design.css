@@ -49,13 +49,18 @@
   margin-bottom: 100px;
 }
 
-.design_sec01 .container ul .photo {
+.design_sec01 .container .design_card .photo {
   width: 700px;
   height: 600px;
   overflow: hidden;
 }
 
-.design_sec01 .container ul .list_text {
+.design_sec01 .container .design_card .photo img {
+  width: 700px;
+  height: 600px;
+}
+
+.design_sec01 .container .design_card .list_text {
   width: 500px;
   height: 600px;
   padding: 0 50px;

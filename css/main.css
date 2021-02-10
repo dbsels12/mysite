@@ -142,7 +142,7 @@ section .main_text .main_text_color {
   font-size: 90px;
   color: var(--accent);
   font-weight: 700;
-  text-shadow: 0px 0px 5px rgba(100, 155, 255, 1);
+  text-shadow: 4px 3px 1px rgba(100, 155, 255, 1);
   margin-right: 200px;
   opacity: 0;
   animation: slide 1.2s 0.8s forwards;
