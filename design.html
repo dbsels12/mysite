@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
   <script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/common.js"></script>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/design.css">
@@ -32,37 +33,32 @@
       <h2 class="title">디자인</h2>
       <p class="sub_title"> <span class="text_color">포토샵,일러스트</span>를 사용하여 배너와 앨범커버, 실무 디자인 등을 했습니다.</p>
       <div class="container">
-        <div class="swiper-container swiper-container-h">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/banner/banner01.jpg" alt="img"></div>
-            <div class="swiper-slide"><img src="./images/banner/banner02.jpg" alt="img"></div>
-            <div class="swiper-slide"><img src="./images/banner/banner03.jpg" alt="img"></div>
-            <div class="swiper-slide"><img src="./images/banner/banner04.jpg" alt="img"></div>
-            <div class="swiper-slide"><img src="./images/banner/banner05.jpg" alt="img"></div>
-            <div class="swiper-slide"><img src="./images/banner/banner06.jpg" alt="img"></div>
-            <div class="swiper-slide"><img src="./images/banner/banner07.jpg" alt="img"></div>
-            <div class="swiper-slide"><img src="./images/banner/banner08.jpg" alt="img"></div>
-            <div class="swiper-slide">
-              <div class="swiper-container swiper-container-v">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img class="img_v" src="./images/banner/banner09.jpg" alt="img"></div>
-                  <div class="swiper-slide"><img class="img_v" src="./images/banner/banner10.jpg" alt="img"></div>
-                  <div class="swiper-slide"><img class="img_v" src="./images/banner/banner11.jpg" alt="img"></div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-v"></div>
-              </div>
-            </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination swiper-pagination-h"></div>
+        <div class="banner">
+          <div class="banner_img"><img src="./images/banner/banner01.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner02.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner03.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner04.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner05.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner06.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner07.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner08.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner09.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner10.jpg" alt="banner"></div>
+          <div class="banner_img"><img src="./images/banner/banner11.jpg" alt="banner"></div>
         </div>
+
 
 
           <ul class="design_list">
             <li class="design_card">
-              <div class="photo">
-                <img src="./images/design/album-01.jpg" alt="img">
+              <div class="photo album">
+                <div class="album_img"><img src="./images/design/album-01.jpg" alt="album"></div>
+                <div class="album_img"><img src="./images/design/album-02.jpg" alt="album"></div>
+                <div class="album_img"><img src="./images/design/album-03.jpg" alt="album"></div>      
               </div>
+
+
+              
               <div class="list_text">
                 <h4>원더걸스 앨범커버 리뉴얼</h4>
                 <p class="list_extra">원더걸스의 앨범자켓을 리뉴얼 디자인 해 보았습니다. 
@@ -73,7 +69,7 @@
             </li>
 
             <li class="design_card">
-              <div class="photo" id="business_card">
+              <div class="photo">
                 <img src="./images/design/businesscard.jpg" alt="img">
               </div>
               <div class="list_text">
@@ -93,8 +89,13 @@
             </li>
 
             <li class="design_card">
-              <div class="photo">
-                <img src="./images/design/package-02.jpg" alt="img">
+              <div class="photo package">
+                <div class="package_img"><img src="./images/design/package-01.jpg" alt="package"></div>
+                <div class="package_img"><img src="./images/design/package-02.jpg" alt="package"></div>
+                <div class="package_img"><img src="./images/design/package-03.jpg" alt="package"></div>    
+                <div class="package_img"><img src="./images/design/package-04.jpg" alt="package"></div>    
+                <div class="package_img"><img src="./images/design/package-05.jpg" alt="package"></div>    
+                <div class="package_img"><img src="./images/design/package-06.jpg" alt="package"></div>    
               </div>
               <div class="list_text">
                 <h4>비닐팩 디자인 (실무)</h4>
@@ -113,8 +114,12 @@
             </li>
 
             <li class="design_card">
-              <div class="photo">
-                <img src="./images/design/booth-01.jpg" alt="img">
+              <div class="photo booth">
+                <div class="booth_img"><img src="./images/design/booth-01.jpg" alt="booth"></div>
+                <div class="booth_img"><img src="./images/design/booth-02.jpg" alt="booth"></div>
+                <div class="booth_img"><img src="./images/design/booth-03.jpg" alt="booth"></div>
+                <div class="booth_img"><img src="./images/design/booth-04.jpg" alt="booth"></div>
+                <div class="booth_img"><img src="./images/design/booth-05.jpg" alt="booth"></div>
               </div>
               <div class="list_text">
                 <h4>박람회 부스 디자인 (실무)</h4>
@@ -233,27 +238,24 @@
   
 
    <script>
-    var swiperH = new Swiper('.swiper-container-h', {
-      slidesPerView: 2,
-      spaceBetween: 5,
-      conteredSlides:true,
-      pagination: {
-        el: '.swiper-pagination-h',
-        clickable: true,
-      },
+    $('.banner').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
     });
-    var swiperV = new Swiper('.swiper-container-v', {
-      direction: 'vertical',
-      spaceBetween: 300,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination-v',
-        clickable: true,
-      },
+
+    $('.photo').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      autoplay:true,
+      autoplaySpeed:2000
     });
-    </script>
+
+
+   </script>
 </body>
 </html>

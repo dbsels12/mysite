@@ -6,29 +6,24 @@
   border-bottom: 5px solid var(--accent);
   margin: 15px auto 0;
 }
-.design_sec01 .swiper-container {
+.design_sec01 .banner {
   margin-bottom: 100px;
 }
 
-.swiper-container {
+.banner {
   /* width: 1200px; */
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.design_sec01 .swiper-container img {
+.design_sec01 .banner img {
   display: block;
   width: 550px;
-  height: 550px;
-}
-
-.design_sec01 .swiper-container .img_v {
-  width: 550px;
   height: auto;
-  box-sizing: border-box;
 }
 
 .design_sec01 .container .full {
