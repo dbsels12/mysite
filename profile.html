@@ -9,6 +9,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <script src="./js/jquery-circle-progress-1.2.2/dist/circle-progress.js"></script>
   <script src="./js/common.js"></script>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/profile.css">
@@ -86,35 +87,39 @@
       <h2 class="title">퍼블리싱 스킬</h2>
       <div class="container">
         <div class="graph">
-          <div class="box1">
-            <canvas id="myChart" width="280vh" height="280vh"></canvas>
+          <div class="box box1">
+            <div class="circle circle-01"></div>
             포토,일러
           </div>
 
-          <div class="box2">
-            <canvas id="myChart" width="280vh" height="280vh"></canvas>
+          <div class="box box2">
+            <div class="circle circle-02"></div>
             피그마
           </div>
 
-          <div class="box3">
-            <canvas id="myChart" width="280vh" height="280vh"></canvas>
+          <div class="box box3">
+            <div class="circle circle-03"></div>
             HTML
           </div>
 
-          <div class="box4">
-            <canvas id="myChart" width="280vh" height="280vh"></canvas>
+          <div class="box box4">
+            <div class="circle circle-04"></div>
+
             CSS
           </div>
 
-          <div class="box5">
-            <canvas id="myChart" width="280vh" height="280vh"></canvas>
+          <div class="box box5">
+            <div class="circle circle-05"></div>
+
             JAVASCRIPT
           </div>
 
-          <div class="box6">
-            <canvas id="myChart" width="280vh" height="280vh"></canvas>
+          <div class="box box6">
+            <div class="circle circle-06"></div>
+
             JQUERY
           </div>
+
 
         
         </div>
@@ -146,27 +151,38 @@
   </footer>
 
   <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myDoughnutChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: [],
-          datasets: [{
-              // label: 'My First dataset',
-              data: [90],
-              backgroundColor: ['rgba(255, 99, 132, 0.2)']
-              
-          }]
-        },
-        options: {     
-          plugins: {
-          }
-        }
+   var circleViwe = $('.circle').circleProgress({
+    size:280,
+    //그래프 크기
+    startAngle: -Math.PI/2 ,
+    //시작지점 (기본값 Math.PI)
+    value: 0.9,
+    //그래프에 표시될 값 
+    animation:true,
+    //그래프가 그려지는 애니메이션 동작 여부
+    fill:'#1363C0',
+    emptyFill:'rgba(255, 255, 255, 0.1)',
+    thickness: 30
     });
 
+    $('.circle-02').circleProgress({
+      value: 0.95
+    })
+
+    $('.circle-05,.circle-06').circleProgress({
+      value: 0.85
+    })
+
+    var scrollTopValue = $(document).scrollTop()
+
+    console.log(scrollTopValue)
+
+    
 
 
-  
+
+
+   
   </script>
 </body>
 </html>

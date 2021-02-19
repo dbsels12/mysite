@@ -64,15 +64,17 @@
 
 .design_sec01 .container ul h4 {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 800;
+  margin-top: 10px;
 }
 
 .design_sec01 .list_extra {
   width: 380px;
-  font-size: 18px;
-  line-height: 1.2;
+  font-size: 22px;
+  line-height: 1.4;
   text-align: left;
-  margin-top: 35px;
+  margin-top: 44px;
+  font-weight: 300;
 }
 
 .design_sec02 .title::after {
@@ -95,17 +97,21 @@
   position: relative;
 }
 
-.design_sec02 .container ul .photo {
+.design_sec02 .container ul .photo_02 {
   width: 550px;
   height: 500px;
   overflow: hidden;
 }
-.design_sec02 .container ul .photo img:hover {
+.design_sec02 .container ul .photo_02 img {
+  width: 550px;
+  height: 500px;
+}
+
+.design_sec02 .container ul .photo_02:hover img {
   filter: blur(10px);
 }
 
 .design_sec02 .container ul li p {
-  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,4 +120,15 @@
   font-size: 28px;
   line-height: 1.4;
   color: var(--text);
+  cursor: pointer;
+  background-color: #ffffff;
+  width: 350px;
+  border-radius: 100px;
+  opacity: 0;
+}
+
+.design_sec02 .container ul .photo_02:hover p {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
 }

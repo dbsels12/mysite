@@ -144,53 +144,71 @@
       <p class="sub_title"> <span class="text_color">포토샵과 피그마</span>를 사용하여 이벤트 페이지와 홈페이지 디자인을 제작했습니다.</p>
       <div class="container">
         <ul>
-          <li>
-            <div class="photo">
-              <a href="#" class="photodesign"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/event_photo.jpg" alt="portfolio"></div>
             </div>
             <p>포토샵 이벤트 페이지 <br>디자인</p>
           </li>
-          <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/event_figma.jpg" alt="portfolio"></div>
             </div>
-            <p>포토샵 이벤트 페이지 <br>디자인</p>
+            <p class="design_title">피그마 이벤트 페이지 <br>디자인</p>
           </li>
-          <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/signin_01.jpg" alt="portfolio"></div>
             </div>
-            <p>피그마 이벤트 페이지 <br>디자인</p>
+            <p class="design_title">피그마 회원가입 페이지 <br>디자인</p>
           </li>
-          <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/signin_02.jpg" alt="portfolio"></div>
             </div>
-            <p>피그마 이벤트 페이지 <br>디자인</p>
+            <p class="design_title">피그마 회원가입 페이지 <br>디자인</p>
           </li>
-          <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/signin_03.jpg" alt="portfolio"></div>
             </div>
-            <p>피그마 홈페이지 <br>디자인</p>
+            <p class="design_title">피그마 회원가입 <br>디자인</p>
           </li>
-          <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/site_web_01.jpg" alt="portfolio"></div>
             </div>
-            <p>피그마 홈페이지 <br>디자인</p>
+            <p class="design_title">피그마 홈페이지 <br>디자인</p>
           </li>
-          <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/sitedesign_web_02.jpg" alt="portfolio"></div>
             </div>
-            <p>피그마 어플리케이션 <br>디자인</p>
+            <p class="design_title">피그마 홈페이지 <br>디자인</p>
           </li>
-          <li>
-            <div class="photo">
-              <a href="#"><img src="./images/smaple/sample.jpg" alt="portfolio"></a>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/sitedesign_mobile_01.jpg" alt="portfolio"></div>
             </div>
-            <p>피그마 어플리케이션 <br>디자인</p>
+            <p class="design_title">피그마 홈페이지 <br>디자인(모바일VER.)</p>
+          </li>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/sitedesign_mobile_02.jpg" alt="portfolio"></div>
+            </div>
+            <p class="design_title">피그마 홈페이지 <br>디자인(모바일VER.)</p>
+          </li>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/appdesign_01.jpg" alt="portfolio"></div>
+            </div>
+            <p class="design_title">피그마 어플리케이션 <br>디자인</p>
+          </li>
+          <li class="photo_02">
+            <div>
+              <div><img src="./images/design/appdesign_02.jpg" alt="portfolio"></div>
+            </div>
+            <p class="design_title">피그마 어플리케이션 <br>디자인</p>
           </li>
 
         </ul>
@@ -254,6 +272,25 @@
       autoplay:true,
       autoplaySpeed:2000
     });
+
+
+    var openBtn = $('.photo_02')
+    var closeBtn = $('.modal button')
+    var dimm = $('.dimm')
+    var modal = $('.modal')
+
+    openBtn.click(function(){
+      dimm.show()
+      modal.show()
+    })
+     
+    closeBtn.click(function(){
+      dimm.hide()
+      modal.hide()
+    })
+
+
+
 
 
    </script>

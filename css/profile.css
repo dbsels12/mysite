@@ -105,13 +105,13 @@
   text-align: center;
 }
 
-.profile_sec02 li {
+.profile_sec02 .box {
   padding: 0 100px 100px 0;
   letter-spacing: 1px;
   font-weight: 900;
 }
 
-.profile_sec02 .chart {
+.profile_sec02 .circle {
   width: 280px;
   height: 280px;
   display: block;
@@ -122,8 +122,19 @@
   margin-bottom: 20px;
 }
 
-.profile_sec02 li:nth-child(3),
-.profile_sec02 li:nth-child(6) {
+.circle-01 {
+  position: relative;
+}
+.circle-01::after {
+  content: "90%";
+  top: 14%;
+  left: 42%;
+  position: absolute;
+  font-size: 24px;
+}
+
+.profile_sec02 .box:nth-child(3),
+.profile_sec02 .box:nth-child(6) {
   padding-right: 0;
 }
 /* 1page- publishing skill --end */
