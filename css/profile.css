@@ -103,6 +103,7 @@
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  height: 900px;
 }
 
 .profile_sec02 .box {
@@ -120,19 +121,18 @@
   line-height: 220px;
   font-weight: bold;
   margin-bottom: 20px;
-}
-
-.circle-01 {
   position: relative;
+  opacity: 0;
 }
-.circle-01::after {
-  content: "90%";
-  top: 14%;
-  left: 42%;
+.circle_strong {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 40px;
   font-size: 24px;
 }
-
 .profile_sec02 .box:nth-child(3),
 .profile_sec02 .box:nth-child(6) {
   padding-right: 0;

@@ -88,34 +88,46 @@
       <div class="container">
         <div class="graph">
           <div class="box box1">
-            <div class="circle circle-01"></div>
+            <div class="circle circle-01">
+              <strong class="circle_strong"></strong> 
+            </div>
             포토,일러
           </div>
 
           <div class="box box2">
-            <div class="circle circle-02"></div>
+            <div class="circle circle-02">
+              <strong class="circle_strong"></strong> 
+            </div>
             피그마
           </div>
 
           <div class="box box3">
-            <div class="circle circle-03"></div>
+            <div class="circle circle-03">
+              <strong class="circle_strong"></strong> 
+            </div>
             HTML
           </div>
 
           <div class="box box4">
-            <div class="circle circle-04"></div>
+            <div class="circle circle-04">
+              <strong class="circle_strong"></strong> 
+            </div>
 
             CSS
           </div>
 
           <div class="box box5">
-            <div class="circle circle-05"></div>
+            <div class="circle circle-05">
+              <strong class="circle_strong"></strong> 
+            </div>
 
             JAVASCRIPT
           </div>
 
           <div class="box box6">
-            <div class="circle circle-06"></div>
+            <div class="circle circle-06">
+              <strong class="circle_strong"></strong> 
+            </div>
 
             JQUERY
           </div>
@@ -151,31 +163,48 @@
   </footer>
 
   <script>
-   var circleViwe = $('.circle').circleProgress({
-    size:280,
-    //그래프 크기
-    startAngle: -Math.PI/2 ,
-    //시작지점 (기본값 Math.PI)
-    value: 0.9,
-    //그래프에 표시될 값 
-    animation:true,
-    //그래프가 그려지는 애니메이션 동작 여부
-    fill:'#1363C0',
-    emptyFill:'rgba(255, 255, 255, 0.1)',
-    thickness: 30
+    var circle = $('.circle')
+    var box = $('.box')
+
+
+
+
+
+
+    $(window).on('scroll', function(){  
+      
+      if($(this).scrollTop() >= 1100){     
+        $(circle).animate({opacity: 1});
+        var circleViwe = $(circle).circleProgress({
+          size:280,
+          //그래프 크기
+          startAngle: -Math.PI/2 ,
+          //시작지점 (기본값 Math.PI)
+          value: 0.9,
+          //그래프에 표시될 값 
+          animation:true,
+          //그래프가 그려지는 애니메이션 동작 여부
+          fill:'#1363C0',
+          emptyFill:'rgba(255, 255, 255, 0.1)',
+          thickness: 30,
+        }).on('circle-animation-progress', function(event, progress) {
+          $(this).find('strong').html(parseInt(90 * progress) + '<i>%</i>');
+        });
+    
+        $('.circle-02').circleProgress({
+          value: 0.95
+        }).on('circle-animation-progress', function(event, progress) {
+          $(this).find('strong').html(parseInt(95 * progress) + '<i>%</i>');
+        });
+    
+        $('.circle-05,.circle-06').circleProgress({
+          value: 0.85
+        }).on('circle-animation-progress', function(event, progress) {
+          $(this).find('strong').html(parseInt(85 * progress) + '<i>%</i>');
+        });
+      }
+
     });
-
-    $('.circle-02').circleProgress({
-      value: 0.95
-    })
-
-    $('.circle-05,.circle-06').circleProgress({
-      value: 0.85
-    })
-
-    var scrollTopValue = $(document).scrollTop()
-
-    console.log(scrollTopValue)
 
     
 
