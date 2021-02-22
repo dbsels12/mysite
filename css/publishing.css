@@ -1,5 +1,8 @@
 /* 2page- publishing --start */
-.publishing .title::after {
+.title_pub {
+  padding-top: 0;
+}
+.section .title::after {
   content: "";
   width: 20%;
   display: block;
@@ -7,36 +10,42 @@
   margin: 15px auto 0;
 }
 
-.publishing p .text_color,
+.pub_sub {
+  margin-bottom: 50px;
+}
+
+.fullpage p .text_color,
 .design_sec01 p .text_color {
   font-size: 22px;
 }
 
-.publishing ul {
+.pub_content {
+  position: relative;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 40px 0;
 }
 
-.publishing ul li {
-  position: relative;
-  width: 285px;
-  text-align: center;
-}
-
-.publishing ul li .publishing_img {
-  width: 285px;
-  height: 540px;
+.publishing_img {
+  width: 800px;
+  height: 280px;
   overflow: hidden;
   transition: 0.5s;
 }
 
-.publishing ul li .click_hover {
+.publishing_img img {
+  width: 800px;
+  height: 280px;
+}
+
+.click_hover {
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 285px;
-  height: 540px;
+  width: 800px;
+  height: 280px;
   color: #ffffff;
   text-align: center;
   line-height: 540px;
@@ -48,42 +57,39 @@
   color: #ffffff;
 }
 
-.publishing ul li .click_hover:hover {
+.click_hover:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-.publishing ul h4 {
-  font-size: 28px;
-  line-height: 1.2;
-  font-weight: bold;
-  color: var(--accent);
-  margin: 20px 0 10px;
-}
-/* 2page- publishing --end */
-.modal_01 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 70%;
-  padding: 2rem 3rem;
-  background: #ffffff;
-  display: none;
-  z-index: 101;
+.pub_text {
+  width: 400px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(238.85deg, #1363c0 0%, #257fe9 110.51%);
+  border-radius: 30px;
 }
 
-.modal_01 button {
-  position: absolute;
-  top: -5%;
-  right: 0;
-  border: none;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 500;
-  background: none;
+.pub_title {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 30px;
+}
+
+.pub_text p {
+  width: 340px;
+  margin: 0;
+  text-align: center;
   color: #ffffff;
-  outline: none;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.pub_info ul {
+  padding-top: 50px;
 }

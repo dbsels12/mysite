@@ -28,7 +28,7 @@
   </header>
 
 
-  <div class='section'>
+  <div class='main_content'>
     <button class="btn_top">top</button>
     <div class="profile_sec01">
       <h2 class="title">소개</h2>
@@ -166,11 +166,6 @@
     var circle = $('.circle')
     var box = $('.box')
 
-
-
-
-
-
     $(window).on('scroll', function(){  
       
       if($(this).scrollTop() >= 1100){     
@@ -182,7 +177,7 @@
           //시작지점 (기본값 Math.PI)
           value: 0.9,
           //그래프에 표시될 값 
-          animation:true,
+          animation: true,
           //그래프가 그려지는 애니메이션 동작 여부
           fill:'#1363C0',
           emptyFill:'rgba(255, 255, 255, 0.1)',
@@ -202,8 +197,9 @@
         }).on('circle-animation-progress', function(event, progress) {
           $(this).find('strong').html(parseInt(85 * progress) + '<i>%</i>');
         });
+      }else{        
       }
-
+      
     });
 
     
