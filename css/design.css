@@ -85,50 +85,98 @@
   margin: 15px auto 0;
 }
 
-.design_sec02 .container ul {
+.design_sec02 .container .popup {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 100px;
 }
 
-.design_sec02 .container ul li {
+.design_sec02 .container .popup a {
   margin-bottom: 100px;
   position: relative;
 }
 
-.design_sec02 .container ul .photo_02 {
-  width: 550px;
-  height: 500px;
+.design_sec02 .container .photo_02 {
+  width: 350px;
+  height: 350px;
   overflow: hidden;
+  border-radius: 20px;
 }
-.design_sec02 .container ul .photo_02 img {
-  width: 550px;
-  height: 500px;
+.design_sec02 .container .photo_02 img {
+  width: 350px;
+  height: 350px;
 }
 
-.design_sec02 .container ul .photo_02:hover img {
+.design_sec02 .container .photo_02:hover img {
   filter: blur(10px);
 }
 
-.design_sec02 .container ul li p {
+.design_sec02 .container .photo_02 p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 28px;
   line-height: 1.4;
   color: var(--text);
   cursor: pointer;
   background-color: #ffffff;
-  width: 350px;
-  border-radius: 100px;
+  width: 550px;
+  height: 500px;
+
   opacity: 0;
 }
 
-.design_sec02 .container ul .photo_02:hover p {
+.design_sec02 .container .photo_02:hover p {
   color: #000000;
   background-color: rgba(255, 255, 255, 0.6);
   opacity: 1;
+}
+
+.dimm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 70%;
+  padding: 2rem 3rem;
+  background: #ffffff;
+  display: none;
+  z-index: 101;
+}
+
+.modal-con {
+}
+
+.modal button {
+  position: absolute;
+  top: -5%;
+  right: 0;
+  border: none;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 500;
+  background: none;
+  color: #ffffff;
+  outline: none;
 }

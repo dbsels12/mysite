@@ -166,7 +166,7 @@
     var circle = $('.circle')
     var box = $('.box')
 
-    $(window).on('scroll', function(){  
+    $(window).one('scroll', function(){  
       
       if($(this).scrollTop() >= 1100){     
         $(circle).animate({opacity: 1});
