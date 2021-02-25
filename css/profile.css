@@ -115,14 +115,15 @@
   width: 280px;
   height: 280px;
   display: block;
-  color: var(--accent);
   text-align: center;
   line-height: 220px;
   font-weight: bold;
   margin-bottom: 20px;
   position: relative;
-  opacity: 0;
+  /* opacity: 0; */
+  cursor: pointer;
 }
+
 .circle_strong {
   position: absolute;
   top: 50%;

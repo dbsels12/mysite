@@ -22,7 +22,7 @@
 
 .design_sec01 .banner img {
   display: block;
-  width: 550px;
+  width: 350px;
   height: auto;
 }
 
@@ -45,19 +45,19 @@
 }
 
 .design_sec01 .container .design_card .photo {
-  width: 700px;
-  height: 600px;
+  width: 600px;
+  height: 500px;
   overflow: hidden;
 }
 
 .design_sec01 .container .design_card .photo img {
-  width: 700px;
-  height: 600px;
+  width: 600px;
+  height: 500px;
 }
 
 .design_sec01 .container .design_card .list_text {
   width: 500px;
-  height: 600px;
+  height: 400px;
   padding: 0 50px;
   box-sizing: border-box;
 }
@@ -156,27 +156,43 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: auto;
   height: 70%;
   padding: 2rem 3rem;
   background: #ffffff;
   display: none;
   z-index: 101;
+  overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .modal-con {
 }
 
-.modal button {
-  position: absolute;
-  top: -5%;
-  right: 0;
-  border: none;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 500;
-  background: none;
-  color: #ffffff;
-  outline: none;
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards li {
+  width: 49%;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.cards li img {
+  width: 100%;
+  display: block;
+}
+
+.dimm img {
+  height: 80%;
+}
+
+.show {
+  visibility: visible;
 }

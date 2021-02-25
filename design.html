@@ -202,54 +202,50 @@
   <!-- modal -->
   <div class="modal">
     <div class="modal-con modal1">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/1.jpg" alt="">
     </div>
     <div class="modal-con modal2">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/2.jpg" alt="">
     </div>
     <div class="modal-con modal3">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/3.jpg" alt="">
     </div>
     <div class="modal-con modal4">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/4.jpg" alt="">
     </div>
     <div class="modal-con modal5">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/5.jpg" alt="">
     </div>
     <div class="modal-con modal6">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/6.jpg" alt="">
     </div>
     <div class="modal-con modal7">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/7.jpg" alt="">
     </div>
     <div class="modal-con modal8">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/8.jpg" alt="">
     </div>
     <div class="modal-con modal9">
-      <button class="btn">닫기</button>
       <img src="./images/design/design_full/9.jpg" alt="">
     </div> 
     <div class="modal-con modal10">
-      <button class="btn">닫기</button>
-      <img src="./images/design/design_full/9.jpg" alt="">
+        <div class="festival_img"><img src="./images/design/design_full/green/X - 1.jpg" alt="design"></div>
+        <div class="festival_img"><img src="./images/design/design_full/green/X - 2.jpg" alt="design"></div>
+        <div class="festival_img"><img src="./images/design/design_full/green/X - 3.jpg" alt="design"></div>
+        <div class="festival_img"><img src="./images/design/design_full/green/X - 4.jpg" alt="design"></div>
+        <div class="festival_img"><img src="./images/design/design_full/green/X - 5.jpg" alt="design"></div>
+        <div class="festival_img"><img src="./images/design/design_full/green/X - 6.jpg" alt="design"></div>
+        <div class="festival_img"><img src="./images/design/design_full/green/X - 7.jpg" alt="design"></div>
     </div>
     <div class="modal-con modal11">
-      <button class="btn">닫기</button>
-      <img src="./images/design/design_full/9.jpg" alt="">
+      <div class="movie_img"><img src="./images/design/design_full/movie/X - 1.jpg" alt="design"></div>
+      <div class="movie_img"><img src="./images/design/design_full/movie/X - 2.jpg" alt="design"></div>
+      <div class="movie_img"><img src="./images/design/design_full/movie/X - 3.jpg" alt="design"></div>
+      <div class="movie_img"><img src="./images/design/design_full/movie/X - 4.jpg" alt="design"></div>
+      <div class="movie_img"><img src="./images/design/design_full/movie/X - 5.jpg" alt="design"></div>
+      <div class="movie_img"><img src="./images/design/design_full/movie/X - 6.jpg" alt="design"></div>
     </div>
   </div>
-
-
-
-    
 
 
   <footer>
@@ -278,10 +274,10 @@
 
    <script>
     $('.banner').slick({
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1000,
     });
 
     $('.photo').slick({
@@ -295,18 +291,8 @@
     });
 
 
-    var openBtn = $('.photo_02')
-    var closeBtn = $('.btn')
     var dimm = $('.dimm')  
-    // openBtn.click(function(){
-    //   dimm.show()
-    //   modal.show()
 
-    // })     
-    // closeBtn.click(function(){
-    //   dimm.hide()
-    //   modal.hide()
-    // })
 
     function openModal(modalname){
       document.get
@@ -317,17 +303,30 @@
   
     }
 
-    closeBtn.on('click',function(){
-      dimm.hide()
+    $('.modal').on('click',function(){
       $(".modal").fadeOut(300);
       $(".modal-con").fadeOut(300);
       $('body').css("overflow", "scroll");
+      dimm.hide()
     });
 
     if((parseInt(document.getElementsByClassName('modal-con').offsetHeight) - 
     parseInt(window.document.body.clientHeight)) > 20) {
        window.document.body.scroll = "auto"; window.resizeBy(18,0); }
 
+
+
+    //탑으로
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 500) {
+      $('.btn_top').fadeIn();
+    } else {
+      $('.btn_top').fadeOut();}
+    })
+
+      $('.btn_top').click(function() {
+      $('html, body').animate({scrollTop:0}, '300');
+    });
 
 
     
